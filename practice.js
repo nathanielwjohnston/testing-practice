@@ -4,4 +4,12 @@ export function capitalise(string) {
   return newString;
 }
 
-export function reverseString(string) {}
+export function reverseString(string) {
+  const reverseString = [];
+  const stringArray = string.split("");
+  for (let character of stringArray) {
+    reverseString.unshift(character);
+  }
+
+  return reverseString.join("");
+}
