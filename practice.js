@@ -13,3 +13,5 @@ export function reverseString(string) {
 
   return reverseString.join("");
 }
+
+export const calculator = (function (firstNumber, secondNumber) {})();

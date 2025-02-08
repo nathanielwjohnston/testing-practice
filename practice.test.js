@@ -11,3 +11,8 @@ test("reverses string", () => {
     ".noitautcnup gnisU"
   );
 });
+
+test("add numbers"), () => {};
+test("subtracts numbers"), () => {};
+test("multiplies numbers"), () => {};
+test("divides numbers"), () => {};
