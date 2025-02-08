@@ -4,3 +4,5 @@ test("capitalises a word's first letter", () => {
   expect(practice.capitalise("test")).toBe("Test");
   expect(practice.capitalise("javascript")).toBe("Javascript");
 });
+
+test("reverses string", () => {});

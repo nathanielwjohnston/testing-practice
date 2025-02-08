@@ -3,3 +3,5 @@ export function capitalise(string) {
   const newString = firstChar.toUpperCase() + string.slice(1);
   return newString;
 }
+
+export function reverseString(string) {}
