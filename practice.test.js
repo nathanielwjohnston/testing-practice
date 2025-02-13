@@ -39,3 +39,14 @@ test("divides numbers", () => {
   expect(practice.calculator.divide(1, 0)).toBe(Infinity);
   expect(practice.calculator.divide(0, 0)).toBe(NaN);
 });
+
+test("shifts a string using a key", () => {
+  expect(practice.caesarCipher("test", 2)).toBe("vguv");
+  expect(practice.caesarCipher("xyz", 4)).toBe("bcd");
+  expect(practice.caesarCipher("caSE PreserVation", 3)).toBe(
+    "fdVH SuhvhuYdwlrq"
+  );
+  expect(practice.caesarCipher("3, 2, 1 ... blast off!", 1)).toBe(
+    "3, 2, 1 ... cmbtu pgg!"
+  );
+});
