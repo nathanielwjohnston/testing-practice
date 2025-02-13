@@ -14,4 +14,22 @@ export function reverseString(string) {
   return reverseString.join("");
 }
 
-export const calculator = (function (firstNumber, secondNumber) {})();
+export const calculator = (function () {
+  function add(firstNumber, secondNumber) {
+    return firstNumber + secondNumber;
+  }
+
+  function subtract(firstNumber, secondNumber) {
+    return firstNumber - secondNumber;
+  }
+
+  function multiply(firstNumber, secondNumber) {
+    return firstNumber * secondNumber;
+  }
+
+  function divide(firstNumber, secondNumber) {
+    return firstNumber / secondNumber;
+  }
+
+  return { add, subtract, multiply, divide };
+})();
