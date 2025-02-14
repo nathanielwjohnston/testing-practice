@@ -14,7 +14,7 @@ export function reverseString(string) {
   return reverseString.join("");
 }
 
-export const calculator = (function (firstNumber, secondNumber) {
+export const calculator = (function () {
   function add(firstNumber, secondNumber) {
     return firstNumber + secondNumber;
   }
