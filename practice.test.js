@@ -50,3 +50,5 @@ test("shifts a string using a key", () => {
     "3, 2, 1 ... cmbtu pgg!"
   );
 });
+
+test("returns an object with certain array properties detailed", () => {});

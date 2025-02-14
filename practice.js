@@ -89,3 +89,7 @@ export function caesarCipher(string, key) {
 
   return encryptedString;
 }
+
+export function analyseArray(array) {
+  return { average, min, max, length };
+}
