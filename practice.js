@@ -91,5 +91,18 @@ export function caesarCipher(string, key) {
 }
 
 export function analyseArray(array) {
+  const length = array.length;
+
+  // using infinity ensures that these min and max values will actually change
+  let min = Infinity;
+  let max = -Infinity;
+  let total = 0;
+  for (let number of array) {
+    if (number < min) min = number;
+    if (number > max) max = number;
+    total += number;
+  }
+
+  const average = total / length;
   return { average, min, max, length };
 }
