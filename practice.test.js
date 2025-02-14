@@ -51,4 +51,25 @@ test("shifts a string using a key", () => {
   );
 });
 
-test("returns an object with certain array properties detailed", () => {});
+test("returns an object with certain array properties detailed", () => {
+  expect(practice.analyseArray([1, 2, 3, 4, 5])).toStrictEqual({
+    average: 3,
+    min: 1,
+    max: 5,
+    length: 5,
+  });
+  // Unsorted Array
+  expect(practice.analyseArray([2, 6, 1, 4, 3, 2])).toStrictEqual({
+    average: 3,
+    min: 1,
+    max: 6,
+    length: 6,
+  });
+  // Negative Numbers
+  expect(practice.analyseArray([6, -3, 2, 1, 5])).toStrictEqual({
+    average: 2.2,
+    min: -3,
+    max: 6,
+    length: 5,
+  });
+});
